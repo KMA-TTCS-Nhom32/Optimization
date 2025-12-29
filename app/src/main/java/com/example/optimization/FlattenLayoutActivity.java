@@ -12,24 +12,37 @@ public class FlattenLayoutActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_flatten); // Kết nối với layout khung sườn
+        setContentView(R.layout.activity_flatten);
 
         container = findViewById(R.id.container);
 
-        findViewById(R.id.btnShowBad).setOnClickListener(v -> loadLayout(true));
-        findViewById(R.id.btnShowGood).setOnClickListener(v -> loadLayout(false));
+        // Nút BAD (Linear Nested)
+        findViewById(R.id.btnShowBad).setOnClickListener(v -> loadLayout(1));
+
+        // Nút Better (Relative)
+        findViewById(R.id.btnShowRelative).setOnClickListener(v -> loadLayout(2));
+
+        // Nút Best (Constraint)
+        findViewById(R.id.btnShowConstraint).setOnClickListener(v -> loadLayout(3));
 
         // Mặc định load Bad
-        loadLayout(true);
+        loadLayout(1);
     }
 
-    private void loadLayout(boolean isBad) {
+    private void loadLayout(int type) {
         container.removeAllViews();
         LayoutInflater inflater = LayoutInflater.from(this);
-        if (isBad) {
-            inflater.inflate(R.layout.layout_flatten_bad, container, true);
-        } else {
-            inflater.inflate(R.layout.layout_flatten_good, container, true);
+
+        switch (type) {
+            case 1: // BAD
+                inflater.inflate(R.layout.layout_flatten_bad, container, true);
+                break;
+            case 2: // BETTER (Relative)
+                inflater.inflate(R.layout.layout_flatten_good, container, true); // layout_flatten_good cũ là Relative
+                break;
+            case 3: // BEST (Constraint)
+                inflater.inflate(R.layout.layout_flatten_constraint, container, true);
+                break;
         }
     }
 }

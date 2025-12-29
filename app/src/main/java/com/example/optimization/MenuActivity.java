@@ -24,11 +24,17 @@ public class MenuActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
+        // Trong onCreate của MenuActivity.java
+
+        findViewById(R.id.btnJank).setOnClickListener(v -> {
+            Intent intent = new Intent(MenuActivity.this, JankActivity.class);
+            startActivity(intent);
+        });
+
         View.OnClickListener featureDevelopingListener = v -> {
             Toast.makeText(MenuActivity.this, "Tính năng đang phát triển", Toast.LENGTH_SHORT).show();
         };
 
-        findViewById(R.id.btnJank).setOnClickListener(featureDevelopingListener);
         findViewById(R.id.btnOpenGLES).setOnClickListener(featureDevelopingListener);
     }
 }

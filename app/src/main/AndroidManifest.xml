@@ -23,6 +23,7 @@
     <activity android:name=".FlattenLayoutActivity" />
     <activity android:name=".MergeLayoutActivity" />
     <activity android:name=".ViewStubActivity" />
+    <activity android:name=".JankActivity" android:exported="false" />
 
 </application>
 

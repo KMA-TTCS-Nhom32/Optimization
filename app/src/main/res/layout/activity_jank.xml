@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="#FFF"
+        android:elevation="4dp">
+
+        <Button
+            android:id="@+id/btnShowBad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BAD (Nested)"
+            android:backgroundTint="#F44336"
+            android:textColor="#FFF"
+            android:layout_marginEnd="10dp"/>
+
+        <Button
+            android:id="@+id/btnShowGood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFF"
+            android:text="GOOD (Flat)" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Bây giờ hãy thử cuộn danh sách bên dưới!"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:textColor="#555"/>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="1dp"
+        android:divider="#CCC"/>
+</LinearLayout>
