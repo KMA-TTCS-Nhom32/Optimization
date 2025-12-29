@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView android:text="Màn hình chính nhẹ nhàng" android:layout_marginBottom="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnLoadMap"
+        android:text="Hiện Chi Tiết (Inflate ViewStub)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ViewStub
+        android:id="@+id/stub_map"
+        android:inflatedId="@+id/panel_map"
+        android:layout="@layout/layout_heavy_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    tools:context=".LayoutOptActivity">
+
+    <!-- Nút 1: Làm phẳng Layout -->
+    <Button
+        android:id="@+id/btnFlatten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Làm phẳng Layout" />
+
+    <!-- Nút 2: Tối ưu cấu trúc (Merge/Include) -->
+    <Button
+        android:id="@+id/btnMerge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Tối ưu cấu trúc (Merge/Include)" />
+
+    <!-- Nút 3: ViewStub (Lazy Loading) -->
+    <Button
+        android:id="@+id/btnViewStub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="ViewStub (Lazy Loading)" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Quay lại" />
+
+</LinearLayout>

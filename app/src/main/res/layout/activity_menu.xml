@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="CHỌN MỤC TỐI ƯU"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/btnLayoutOpt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Layout Optimization" />
+
+    <Button
+        android:id="@+id/btnOverdraw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Overdraw" />
+
+    <Button
+        android:id="@+id/btnJank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jank" />
+
+    <Button
+        android:id="@+id/btnOpenGLES"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OpenGL ES" />
+
+</LinearLayout>
