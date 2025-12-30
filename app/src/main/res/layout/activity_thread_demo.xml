@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="#1A1A2E">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#16213E"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🧵 UI Thread &amp; Background Thread"
+            android:textSize="18sp"
+            android:textColor="#E94560"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Xử lý ảnh: So sánh UI Thread vs Background Thread"
+            android:textSize="12sp"
+            android:textColor="#888888"
+            android:layout_marginTop="4dp"/>
+
+    </LinearLayout>
+
+    <!-- Image Preview -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="12dp"
+        android:background="#0F3460">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+
+        <!-- Progress Overlay -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:indeterminateTint="#E94560"/>
+
+        <!-- Status Label -->
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:text="🖼️ Ảnh gốc"
+            android:textSize="12sp"
+            android:textColor="#FFFFFF"
+            android:background="#CC000000"
+            android:padding="8dp"/>
+
+    </FrameLayout>
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="12dp">
+
+        <Button
+            android:id="@+id/btnUIThread"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="❌ UI Thread\n(SAI)"
+            android:textSize="11sp"
+            android:layout_margin="4dp"
+            android:backgroundTint="#F44336"/>
+
+        <Button
+            android:id="@+id/btnBackgroundThread"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="✅ Background\n(ĐÚNG)"
+            android:textSize="11sp"
+            android:layout_margin="4dp"
+            android:backgroundTint="#4CAF50"/>
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="🔄 Reset"
+            android:textSize="11sp"
+            android:layout_margin="4dp"
+            android:backgroundTint="#2196F3"/>
+
+    </LinearLayout>
+
+    <!-- Info Panel -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/tvInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="12sp"
+            android:textColor="#CCCCCC"
+            android:lineSpacingExtra="4dp"
+            android:fontFamily="monospace"/>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -29,6 +29,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Kịch bản 2: GPU (Shader Complexity)"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnScenarioTexture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kịch bản 3: Texture Compression"
         android:padding="16dp"/>
 
 </LinearLayout>

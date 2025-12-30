@@ -47,5 +47,12 @@ public class MenuActivity extends Activity {
             Intent intent = new Intent(MenuActivity.this, ImageOptimizationActivity.class);
             startActivity(intent);
         });
+
+        Button btnThread = findViewById(R.id.btnThread);
+
+        btnThread.setOnClickListener(v -> {
+            startActivity(new Intent(MenuActivity.this, ThreadDemoActivity.class));
+        });
+
     }
 }

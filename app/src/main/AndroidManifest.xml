@@ -27,6 +27,8 @@
     <activity android:name=".OpenGLSelectorActivity" android:exported="false"/>
     <activity android:name=".OpenGLDemoActivity" android:exported="false"/>
     <activity android:name=".ImageOptimizationActivity" android:exported="false" />
+    <activity android:name=".ThreadDemoActivity" />
+    <activity android:name=".TextureCompressionActivity" />
 
 </application>
 
