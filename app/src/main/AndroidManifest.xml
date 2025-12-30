@@ -26,6 +26,7 @@
     <activity android:name=".JankActivity" android:exported="false" />
     <activity android:name=".OpenGLSelectorActivity" android:exported="false"/>
     <activity android:name=".OpenGLDemoActivity" android:exported="false"/>
+    <activity android:name=".ImageOptimizationActivity" android:exported="false" />
 
 </application>
 

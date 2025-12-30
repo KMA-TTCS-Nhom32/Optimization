@@ -16,6 +16,7 @@ public class MenuActivity extends Activity {
         Button btnOverdraw = findViewById(R.id.btnOverdraw);
         Button btnJank = findViewById(R.id.btnJank);
         Button btnOpenGL = findViewById(R.id.btnOpenGL);
+        Button btnImageOpt = findViewById(R.id.btnImageOpt); // MỚI: Ánh xạ nút mới
 
         // 1. Chuyển sang màn hình Tối ưu Layout
         btnLayout.setOnClickListener(v -> {
@@ -38,6 +39,12 @@ public class MenuActivity extends Activity {
         // 4. Chuyển sang màn hình OpenGL ES
         btnOpenGL.setOnClickListener(v -> {
             Intent intent = new Intent(MenuActivity.this, OpenGLSelectorActivity.class);
+            startActivity(intent);
+        });
+
+        // 5. MỚI: Chuyển sang màn hình Tối ưu hình ảnh
+        btnImageOpt.setOnClickListener(v -> {
+            Intent intent = new Intent(MenuActivity.this, ImageOptimizationActivity.class);
             startActivity(intent);
         });
     }

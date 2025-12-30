@@ -74,6 +74,21 @@
         android:paddingTop="16dp"
         android:paddingBottom="16dp"
         android:backgroundTint="#9C27B0"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnImageOpt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="5. Tối ưu hóa Hình ảnh &amp; RAM"
+        android:textSize="16sp"
+        android:gravity="start|center_vertical"
+        android:paddingStart="24dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:backgroundTint="#E91E63"
         android:textColor="#FFFFFF"/>
 
 </LinearLayout>
