@@ -2,39 +2,78 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     android:orientation="vertical"
-    android:padding="20dp">
+    android:padding="24dp"
+    android:gravity="center_horizontal"
+    android:background="#F5F5F5">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:text="CHỌN MỤC TỐI ƯU"
-        android:textSize="22sp" />
+        android:text="MENU TỐI ƯU HÓA"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="20dp"/>
 
     <Button
         android:id="@+id/btnLayoutOpt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Layout Optimization" />
+        android:text="1. Tối ưu hóa Layout"
+        android:textSize="16sp"
+        android:gravity="start|center_vertical"
+        android:paddingStart="24dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:backgroundTint="#2196F3"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp"/>
 
     <Button
         android:id="@+id/btnOverdraw"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Overdraw" />
+        android:text="2. Loại bỏ Overdraw"
+        android:textSize="16sp"
+        android:gravity="start|center_vertical"
+        android:paddingStart="24dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp"/>
 
     <Button
         android:id="@+id/btnJank"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Jank" />
+        android:text="3. Đảm bảo tốc độ khung hình"
+        android:textSize="16sp"
+        android:gravity="start|center_vertical"
+        android:paddingStart="24dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:backgroundTint="#FF9800"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp"/>
 
     <Button
-        android:id="@+id/btnOpenGLES"
+        android:id="@+id/btnOpenGL"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="OpenGL ES" />
+        android:text="4. OpenGL ES (3D &amp; Game)"
+        android:textSize="16sp"
+        android:gravity="start|center_vertical"
+        android:paddingStart="24dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:backgroundTint="#9C27B0"
+        android:textColor="#FFFFFF"/>
 
 </LinearLayout>

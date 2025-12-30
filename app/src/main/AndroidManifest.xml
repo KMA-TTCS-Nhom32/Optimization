@@ -24,6 +24,8 @@
     <activity android:name=".MergeLayoutActivity" />
     <activity android:name=".ViewStubActivity" />
     <activity android:name=".JankActivity" android:exported="false" />
+    <activity android:name=".OpenGLSelectorActivity" android:exported="false"/>
+    <activity android:name=".OpenGLDemoActivity" android:exported="false"/>
 
 </application>
 

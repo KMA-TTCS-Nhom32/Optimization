@@ -1,40 +1,44 @@
 package com.example.optimization;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
-import androidx.appcompat.app.AppCompatActivity;
 
-public class MenuActivity extends AppCompatActivity {
+public class MenuActivity extends Activity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
-        findViewById(R.id.btnLayoutOpt).setOnClickListener(v -> {
+        Button btnLayout = findViewById(R.id.btnLayoutOpt);
+        Button btnOverdraw = findViewById(R.id.btnOverdraw);
+        Button btnJank = findViewById(R.id.btnJank);
+        Button btnOpenGL = findViewById(R.id.btnOpenGL);
 
+        // 1. Chuyển sang màn hình Tối ưu Layout
+        btnLayout.setOnClickListener(v -> {
             Intent intent = new Intent(MenuActivity.this, LayoutOptActivity.class);
             startActivity(intent);
         });
 
-        findViewById(R.id.btnOverdraw).setOnClickListener(v -> {
+        // 2. Chuyển sang màn hình Overdraw
+        btnOverdraw.setOnClickListener(v -> {
             Intent intent = new Intent(MenuActivity.this, OverdrawActivity.class);
             startActivity(intent);
         });
 
-        // Trong onCreate của MenuActivity.java
-
-        findViewById(R.id.btnJank).setOnClickListener(v -> {
+        // 3. Chuyển sang màn hình Frame Rate (Jank)
+        btnJank.setOnClickListener(v -> {
             Intent intent = new Intent(MenuActivity.this, JankActivity.class);
             startActivity(intent);
         });
 
-        View.OnClickListener featureDevelopingListener = v -> {
-            Toast.makeText(MenuActivity.this, "Tính năng đang phát triển", Toast.LENGTH_SHORT).show();
-        };
-
-        findViewById(R.id.btnOpenGLES).setOnClickListener(featureDevelopingListener);
+        // 4. Chuyển sang màn hình OpenGL ES
+        btnOpenGL.setOnClickListener(v -> {
+            Intent intent = new Intent(MenuActivity.this, OpenGLSelectorActivity.class);
+            startActivity(intent);
+        });
     }
 }

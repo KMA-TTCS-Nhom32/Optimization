@@ -16,10 +16,10 @@
 
         <Button
             android:id="@+id/btnShowBad"
-            android:layout_width="120dp"
+            android:layout_width="29dp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="4dp"
-            android:layout_weight="1"
+            android:layout_weight="0.6"
             android:backgroundTint="#F44336"
             android:text="BAD"
             android:textColor="#FFF"
@@ -28,33 +28,24 @@
         <Button
             android:id="@+id/btnShowRelative"
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="Relative"
-            android:textSize="12sp"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1.2"
             android:backgroundTint="#FF9800"
+            android:text="Relative"
             android:textColor="#FFF"
-            android:layout_marginEnd="4dp"/>
+            android:textSize="12sp" />
 
         <Button
             android:id="@+id/btnShowConstraint"
             android:layout_width="0dp"
-            android:layout_weight="1"
+            android:layout_weight="1.2"
             android:layout_height="wrap_content"
             android:backgroundTint="#2196F3"
             android:textColor="#FFF"
             android:textSize="12sp"
             android:text="Constraint" />
     </LinearLayout>
-
-    <TextView
-        android:id="@+id/tvInfo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:text="ConstraintLayout là tiêu chuẩn hiện đại nhất!"
-        android:textAlignment="center"
-        android:textStyle="italic"/>
 
     <FrameLayout
         android:id="@+id/container"

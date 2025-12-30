@@ -24,6 +24,5 @@ public class LayoutOptActivity extends AppCompatActivity {
         findViewById(R.id.btnViewStub).setOnClickListener(v ->
                 startActivity(new Intent(this, ViewStubActivity.class)));
 
-        findViewById(R.id.btnBack).setOnClickListener(v -> finish());
     }
 }

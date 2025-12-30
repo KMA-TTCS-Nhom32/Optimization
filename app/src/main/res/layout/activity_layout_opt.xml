@@ -1,40 +1,58 @@
-<?xml version="1.0" encoding="utf-8"?>    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:padding="16dp"
-    tools:context=".LayoutOptActivity">
+    android:padding="20dp"
+    android:background="#FAFAFA">
 
-    <!-- Nút 1: Làm phẳng Layout -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. TỐI ƯU HÓA LAYOUT"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Button
         android:id="@+id/btnFlatten"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Làm phẳng Layout" />
+        android:text="Làm phẳng (Flatten Layout)"
+        android:gravity="start|center_vertical"
+        android:padding="16dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- Nút 2: Tối ưu cấu trúc (Merge/Include) -->
     <Button
         android:id="@+id/btnMerge"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Tối ưu cấu trúc (Merge/Include)" />
+        android:text="Sử dụng thẻ &lt;merge&gt;"
+        android:gravity="start|center_vertical"
+        android:padding="16dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/btnFlatten"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- Nút 3: ViewStub (Lazy Loading) -->
     <Button
         android:id="@+id/btnViewStub"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="ViewStub (Lazy Loading)" />
+        android:text="Sử dụng ViewStub (Lazy Load)"
+        android:gravity="start|center_vertical"
+        android:padding="16dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/btnMerge"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
-    <Button
-        android:id="@+id/btnBack"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="Quay lại" />
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
